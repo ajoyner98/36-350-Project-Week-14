@@ -1,0 +1,7 @@
+factor.to.numeric = function(input.factor){
+  input.string = toString(input.factor)
+  split.str = unlist(strsplit(input.string, split = ","))
+  numeric.output = as.numeric(paste(split.str[1], split.str[2], sep = "."))
+
+  return(numeric.output)
+}
